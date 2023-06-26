@@ -1,0 +1,140 @@
+.header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:fixed;
+    background: white;
+    top:0;
+    left:0;
+    right:0;
+    height:55px;
+    border-bottom:1px solid rgb(224, 224, 224);
+    z-index:100;
+    }
+.right_side{    
+    display:flex;
+    align-items: center;
+    margin-right:59px
+}
+.hamburger_menu{
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 25px;
+}
+.youtube_logo{
+    height: 20px;
+}
+.middle_side{
+    display:flex;
+    align-items: center;
+    margin-right:30px;
+    width : 455px ;
+}
+.voice_search_logo{
+    height:23px;
+    margin-left: 9px;
+    border: 1px solid rgb(227, 226, 226);
+    border-radius: 20px;
+    padding:6px;
+    background-color: rgb(243, 243, 243);
+}
+.search_logo{
+    height:24px;
+    width:64px;
+    border:1px solid rgb(211, 211, 211);
+    padding-top:7px;
+    padding-bottom:7px;
+    margin-left:-0.5px;
+   
+}
+
+.search_box::placeholder{
+    font-family: roboto ,arial;
+    font-size: 16px;
+}
+.left_side{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:180px;
+    padding-right: 25px;
+    flex-shrink: 0;
+}
+.upload_icon{
+    height: 24px;
+}
+.youtube_app_icon{
+   height:24px; 
+}
+.notification_icon{
+    height: 24px;
+}
+.notification_icon_pop{
+    position:relative ;
+}
+.notification_number{
+    position:absolute;
+    top:-2px;
+    right:-5px;
+    background-color: rgb(208, 6, 6);
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top:1px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    font-family: roboto , arial;
+    font-size: 10px;
+    color:white;
+    border: 1px solid white;
+}
+.mychannel_icon{
+    height: 32px;
+    border-radius: 16px;
+}
+.search_logo_icon,
+.voice_search_icon,
+.upload_create_icon,
+.youtube_apps_icon,
+.notifications_icon{
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor:pointer;
+}
+.search_logo_icon .tooltip,
+.voice_search_icon .tooltip,
+.upload_create_icon .tooltip,
+.youtube_apps_icon .tooltip,
+.notifications_icon .tooltip{
+    position:absolute;
+    background-color: rgb(115, 115, 115);
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-right: 9px;
+    padding-left: 9px;
+    color:white;
+    font-size: 12px;
+    font-family: roboto , arial ;
+    bottom:-40px;
+    border-radius: 2px;
+    opacity:0;
+    pointer-events:none;
+    white-space: nowrap;
+}
+.search_logo_icon:hover .tooltip,
+.voice_search_icon:hover .tooltip,
+.upload_create_icon:hover .tooltip,
+.youtube_apps_icon:hover .tooltip,
+.notifications_icon:hover .tooltip{
+    opacity:1;
+}
+.search_box{
+    height:39px;
+    width:0px;
+    flex:1;
+    border: 1px solid rgb(209, 209, 209);
+    font-size: 16px;
+    padding-left: 10px;
+    box-shadow:inset 1px 4px 3px rgba(0, 0, 0, 0.05);
+}
